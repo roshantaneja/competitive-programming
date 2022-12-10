@@ -67,7 +67,6 @@ def score(i, j):
 # part 2
 for i in range(m):
     for j in range(n):
-        print(score(i, j))
+        #print(score(i, j))
         total2 = max(total2, score(i, j))
 print (total2)
-print ("hello")
