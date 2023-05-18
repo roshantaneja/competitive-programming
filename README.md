@@ -1,2 +1,0 @@
-# AdventOfCode
-Self explanitory
