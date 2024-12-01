@@ -30,3 +30,5 @@ for num in left_list:
         similarity_score += num * right_counter[num]
 
 print("Similarity Score:", similarity_score)
+
+p(sum(abs(l - r) for l, r in zip(left_list, right_list)))
