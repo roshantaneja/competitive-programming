@@ -20,3 +20,5 @@ data/*
 */test_data
 */**/data
 */**/test_data
+
+.DS_Store
