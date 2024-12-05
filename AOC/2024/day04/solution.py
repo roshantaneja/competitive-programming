@@ -37,7 +37,7 @@ def count_xmas_patterns(grid):
     count = 0
     rows = len(grid)
     cols = len(grid[0])
-    
+
     def is_xmas(r, c):
         if grid[r][c] != 'A':
             return False
@@ -65,4 +65,4 @@ grid = [line.strip() for line in lines]
 
 result = count_xmas_patterns(grid)
 
-print(f"The number of X-MAS patterns is: {result}")
+print(result)
