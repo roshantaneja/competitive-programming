@@ -1,4 +1,4 @@
-with open("input1.txt") as file:
+with open("input.txt") as file:
     line = file.read().strip()
 
 # Parse the disk map into a list of blocks
