@@ -3,14 +3,12 @@ from collections import defaultdict
 with open("input.txt") as file:
     lines = file.read().strip().split("\n")
 
-# Parse the input into a grid
 grid = [list(line.strip()) for line in lines]
 rows = len(grid)
 cols = len(grid[0]) if rows > 0 else 0
 
 visited = [[False]*cols for _ in range(rows)]
 
-# Directions for exploring neighbors (up, down, left, right)
 directions = [(-1,0), (1,0), (0,-1), (0,1)]
 
 def in_bounds(r, c):
@@ -44,7 +42,6 @@ def part1():
                         if not in_bounds(nr, nc) or grid[nr][nc] != plant_type:
                             perimeter += 1
 
-                # Price for this region
                 price = area * perimeter
                 total_cost += price
 
@@ -53,8 +50,6 @@ def part1():
 print(part1())
 
 def part2():
-    grid = [list(line.strip()) for line in lines]
-
     regions = []
     for y, row in enumerate(grid):
         for x, plant in enumerate(row):
