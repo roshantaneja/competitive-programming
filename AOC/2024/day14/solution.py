@@ -68,21 +68,6 @@ safety_factor = part1(robots, time, width, height)
 print("Part 1 - Safety Factor:", safety_factor)
 
 
-
-
-
-
-with open("input.txt") as file:
-    lines = file.read().strip().split("\n")
-
-# Parse input data
-robots = []
-for line in lines:
-    pos_part, vel_part = line.split(" v=")
-    px, py = map(int, pos_part[2:].split(","))
-    vx, vy = map(int, vel_part.split(","))
-    robots.append(((px, py), (vx, vy)))
-
 # Function to get robot positions at a given time
 def get_positions_at_time(robots, time, width, height, wrap=True):
     """

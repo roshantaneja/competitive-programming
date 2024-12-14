@@ -34,7 +34,7 @@ def part1():
     solvable_costs = []
     for (xA, yA, xB, yB, targetX, targetY) in machines:
         min_cost = None
-        for A in range(100):# pick any large number here, 100 worked for pt 1 but probs not for pt 2
+        for A in range(100):
             if xB != 0:
                 if (targetX - A*xA) % xB != 0:
                     continue
@@ -105,3 +105,5 @@ def part2():
 
 print("Part 1:", part1())
 print("Part 2:", part2())
+
+
